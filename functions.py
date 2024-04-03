@@ -3,11 +3,10 @@ import datetime
 
 def greetings(name):
 	if 'MYDATE' in os.environ:
-		x = datetime.datetime.strptime(os.getenv('MYDATE'), '%m-%d-%Y %H:%M:%S')
+		x = int(datetime.datetime.strptime(os.getenv('MYDATE'), '%m-%d-%Y %H:%M:%S').strftime('%H'))
 	else:
-		x = datetime.datetime.now()
-	y = int(x.strftime('%H'))
-	if (y >= 6 and y < 12):
+		x = int(datetime.datetime.now().strftime('%H'))
+	if (x >= 6 and x < 12):
 		return ("¡Buenos días " + name + "!")
 	else:
 		return ("Hola " + name)
