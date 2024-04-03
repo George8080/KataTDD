@@ -10,7 +10,7 @@ def greetings(name):
 		return ("¡Buenos días " + name + "!")
 	elif (x >= 12 and x < 20):
 		return ("¡Buenas tardes " + name + "!")
-	elif (x >= 20 or x < 6):
+	else:
 		return ("¡Buenas noches " + name + "!")
 	pass
 
