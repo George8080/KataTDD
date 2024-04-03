@@ -32,3 +32,31 @@ Todo este proyecto fue realizado dentro de Ubuntu - Linux, corriendo todos los c
   ```
   pip install pytest-monkeytype
   ```
+## Como correr los programas
+En primer lugar, para hacer las pruebas tiene que primero descargar todos los archivos presentes dentro de este repositorio. Para esto se puede hacer manualmente o utilizar el siguiente comando:
+```
+git clone https://github.com/George8080/KataTDD.git
+```
+Una vez hecho esto es posible realizar el resto de programas posibles.
+* Para poder correr los test presentes en el programa simplemente se debe escribir este comando en la terminal:
+  ```
+  pytest -q test.py
+  ```
+* Para poder correr el programa principal (main) se tiene que escribir el siguiente comando:
+  ```
+  python main.py
+  ```
+* Si quieres usar una entrada predeterminada externa debes utilizar el siguiente comando:
+  ```
+  python main.py < input.txt
+  ```
+  (Siendo "input.txt" un archivo con la entrada la cual se desea probar)
+* Si quieres grabar el resultado en un archivo aparte debes utilizar el siguiente comando:
+  ```
+  python main.py > output.txt
+  ```
+  (Siendo "output.txt" un nuevo archivo en el cual se guardarán y/o sobreescribirán los resultados)
+* También es posible usar una entrada predeterminada y un archivo que guarde el resultado al mismo tiempo:
+  ```
+  python main.py < input.txt > output.txt
+  ```
