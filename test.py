@@ -4,6 +4,7 @@ import datetime
 from functions import greetings
 from functions import reverse
 from functions import palindrome
+from functions import stop
 
 def test_patched_greetingsMorning(monkeypatch):
     monkeypatch.setenv('MYDATE', '05-31-2018 07:30:12')
@@ -30,3 +31,6 @@ def test_palindrome_2():
 	assert palindrome("") == "¡Bonita palabra!" 
 def test_palindrome_3():
 	assert palindrome("arañara") == "¡Bonita palabra!" 
+
+def test_stop():
+	assert stop("Carlos") == "Adios Carlos"
