@@ -15,6 +15,8 @@ def greetings(name):
 	pass
 
 def reverse(text):
+	x = (text)[::-1]
+	return x
 	pass
 
 def palindrome(txt):
