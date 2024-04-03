@@ -28,3 +28,7 @@ Todo este proyecto fue realizado dentro de Ubuntu - Linux, corriendo todos los c
   ```
   pip install pytest-mock
   ```
+* Para poder realizar el mock correctamente utilizando Monkeytype, se requiere de instalar el siguiente aditamento de Pytest: 
+  ```
+  pip install pytest-monkeytype
+  ```
