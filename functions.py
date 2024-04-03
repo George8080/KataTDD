@@ -19,6 +19,13 @@ def reverse(text):
 	pass
 
 def palindrome(txt):
+	y = txt
+	x = txt[::-1]
+	if x == y:
+		result = "¡Bonita palabra!"
+	else:
+		result = ""
+	return result
 	pass
 
 def stop(name):
