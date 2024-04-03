@@ -9,7 +9,8 @@ def greetings(name):
 	if (x >= 6 and x < 12):
 		return ("¡Buenos días " + name + "!")
 	else:
-		return ("Hola " + name)
+		if (x >= 12 and x < 20):
+			return ("¡Buenas tardes " + name + "!")
 	pass
 
 def palindrome(text):
