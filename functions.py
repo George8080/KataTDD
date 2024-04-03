@@ -26,4 +26,6 @@ def palindrome(txt):
 	pass
 
 def stop(name):
+	x = ("Adios " + name)
+	return x
 	pass
