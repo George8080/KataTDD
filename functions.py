@@ -1,6 +1,7 @@
 import os
 import datetime
 
+# Function to greet user
 def greetings(name):
 	if 'MYDATE' in os.environ:
 		x = int(datetime.datetime.strptime(os.getenv('MYDATE'), '%m-%d-%Y %H:%M:%S').strftime('%H'))
@@ -14,10 +15,14 @@ def greetings(name):
 		return ("¡Buenas noches " + name + "!")
 	pass
 
+
+# Function to return the reverse word
 def reverse(text):
 	return text[::-1]
 	pass
 
+
+# Function to define if a word is a palindrome
 def palindrome(txt):
 	if txt == reverse(txt):
 		return "¡Bonita palabra!"
@@ -25,6 +30,8 @@ def palindrome(txt):
 		return ""
 	pass
 
+
+# Function to create the goodbye
 def stop(name):
 	return ("Adios " + name)
 	pass
