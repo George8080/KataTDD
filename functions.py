@@ -14,10 +14,10 @@ def greetings(name):
 		return ("¡Buenas noches " + name + "!")
 	pass
 
-def palindrome(text):
+def reverse(text):
 	pass
 
-def reverse(txt):
+def palindrome(txt):
 	pass
 
 def stop(name):
